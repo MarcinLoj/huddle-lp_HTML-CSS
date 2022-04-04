@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Karla&family=Kumbh+Sans:wght@700&family=Lexend+Deca&family=Poppins:wght@100;200;300;400;600;700&family=Red+Hat+Display:wght@900&family=Roboto+Condensed:wght@300&family=Roboto:ital,wght@0,900;1,400&family=Spartan:wght@700&display=swap');
+
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color:  hsl(257, 40%, 49%);
+    color: #fff;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page__images {
+    display: flex;
+    flex-direction: column;
+}
+.page__app-view {
+    margin-bottom: 60px;
+}
+.page__logo {
+    max-width: 180px;
+    max-height: 180px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+img {
+    min-width: 20px;
+    min-height: 20px;
+    max-width: 350px;
+    max-height: 350px;
+}
+.page__title {
+    font-weight: 600;
+    padding: 0 20vw;
+    margin-bottom: 16px;
+}
+.page__desc {
+    padding: 0 20vw;
+    opacity: 0.7;
+    margin-bottom: 48px;
+}
+.page__content {
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 72px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 0 5px 5px -5px #333;
+    transition: ease-out 0.5s;
+    margin-bottom: 80px;
+}
+.btn:hover {
+    color: #fff;
+    border-color: hsl(300, 69%, 71%);
+    background-color: hsl(300, 69%, 71%);
+}
+
+.page__fb-icon, .page__twitter-icon, .page__instagram-icon {
+    max-width: 36px;
+    max-height: 36px;
+    margin-right: 12px;
+    padding: 4px;
+    transition: ease-out 0.5s;
+}
+.page__fb-icon:hover, .page__twitter-icon:hover, .page__instagram-icon:hover {
+    border-radius: 999px;
+    filter: invert();
+}
+@media (min-width: 1286px) {
+    .page {
+        flex-direction: row;
+    }
+    img {
+        min-width: 20px;
+        min-height: 20px;
+        max-width: 500px;
+        max-height: 500px;
+    }
+    .page__content {
+        text-align: left;
+        margin-left: 24px;
+        align-self: center;
+    }
+    .page__desc {
+        padding: 0;
+        margin-bottom: 24px;
+        padding-right: 40vw;
+    }
+    .page__title {
+        padding: 0;
+        padding-right: 40vw;
+        margin-bottom: 16px;
+        margin-top: 140px;
+    }
+    .page__external {
+        width: 300px;
+        position: absolute;
+        left: 80vw;
+        top: 90vh;
+    }
+    .page__external-link {
+        display: inline;
+    }
+    .page__app-view {
+        margin-left: 32px;
+    }
+    .page__logo {
+        margin-left: 32px;
+    }
+    .btn {
+        margin-bottom: 20px;
+    }
+}
